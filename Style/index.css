@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 20px;
+}
+
+.hud a {
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: color 0.3s, font-size 0.3s; 
+}
+
+.HomeButton:hover{
+    color: #ff7300;
+    font-size: 20px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon-wrapper {
+    position: relative;
+    cursor: pointer;
+    margin-left: 24px;
+    transition: transform 0.3s;
+}
+
+.menu-icon {
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.3s, font-size 0.3s; 
+}
+
+.menu-icon-wrapper:hover .menu-icon {
+    color: #ff7300;
+    font-size: 24px;
+}
+
+.menu-icon.hide {
+    display: none;
+}
+
+.menu-icon.show {
+    display: inline-block;
+}
+
+.close-icon {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.close-icon.show {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-icon-wrapper:hover .close-icon {
+    color: #ff6666;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 30px);
+    right: 0;
+    background-color: #000;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    width: 180px;
+    z-index: 1;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.menu-icon-wrapper:hover .dropdown-content {
+    opacity: 1;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.menu-list li:hover {
+    background-color: #ff6666;;
+}
+
+.menu-list li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+}
+
+.welcome {
+    width: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.Texo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.custom-textarea {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+    background-color: #ffe7e7;
+    font-style: italic;
+    color: #999;
+}
+
+.custom-textarea:focus {
+    outline: none;
+}
+
+.button {
+    text-align: center;
+}
+
+.custom-button {
+    background-color: #0c0c0c;
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #ff7300;
+}

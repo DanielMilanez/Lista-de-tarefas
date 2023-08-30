@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check List</title>
+    <link rel="stylesheet" href="Style/index.css">
+    <script defer src="Scripts/EditTexto.js"></script>
+    <script defer src="Scripts/Menu.js"></script>
+</head>
+<body>
+    <div class="hud">
+        <a href="Home.html" class="HomeButton">Home</a>
+        <div class="navbar">
+            <div class="menu-icon-wrapper">
+                <span class="menu-icon" id="menuIcon">&#9776;</span>
+                <span class="close-icon" id="closeIcon">&#10006;</span>
+                <div class="dropdown-content" id="dropdown">
+                    <ul class="menu-list">
+                        <li><a href="#">Minha Conta</a></li>
+                        <li><a href="#">Check List</a></li>
+                        <li><a href="#">Configurações</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="welcome">
+        <h1>Minha Check List</h1>
+        <p>Deseja adicionar algo a lista? </p>
+    </div>
+    <div class="Texo">
+        <textarea name="message" class="custom-textarea" rows="5" cols="43">Digite algo para adicionar ao seu Bloco de Notas!</textarea>
+    </div>    
+
+    <div class="button">
+        <button type="button" class="custom-button">Adicionar</button>
+    </div>
+</body>
+</html>
